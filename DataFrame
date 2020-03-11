@@ -1,3 +1,5 @@
+## Python Jupyter Notebook print dataframe borders
+
 %%HTML
 <style type="text/css">
 table.dataframe td, table.dataframe th {
@@ -5,3 +7,10 @@ table.dataframe td, table.dataframe th {
   color: black !important;
 }
 </style>
+
+
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.rand(5,2), columns=["a","b"])
+print(df)
